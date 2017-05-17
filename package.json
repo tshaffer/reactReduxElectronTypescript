@@ -10,8 +10,6 @@
     "run": "electron ."
   },
   "dependencies": {
-    "@brightsign/bscore": "^0.1.1",
-    "@brightsign/bsdatamodel": "0.4.3",
     "@types/electron": "^1.4.37",
     "@types/react": "^15.0.24",
     "@types/react-dom": "^15.5.0",

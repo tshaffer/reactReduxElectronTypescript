@@ -5,13 +5,14 @@ import Hello from './containers/hello';
 import { Provider } from 'react-redux';
 
 import { createStore } from 'redux';
-import { enthusiasm } from './reducers/index';
+// import { enthusiasm } from './reducers/index';
 import { StoreState } from './types/index';
 
-const store = createStore<StoreState>(enthusiasm, {
-    enthusiasmLevel: 1,
-    languageName: 'TypeScript',
-});
+import reducers from './store/reducers';
+
+const store = createStore<StoreState>(
+    reducers
+);
 
 ReactDOM.render(
     <Provider store={store}>
